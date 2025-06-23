@@ -128,6 +128,13 @@ modules:
     reconnectInterval: 1000
     connectionTimeout: 1000
 
+# - greengrass-gateway-monitor: # - Add Greengrass Gateway Monitor module
+#     gatewayAddress: localhost
+#     readInterval: 10000
+#     port: 8883
+#     timeout: 2000
+#     windowsServices: [ "Greengrass", "GreengrassCredentialManagerService" ]
+#     linuxServices: [ "greengrass.service", "greengrasscredentialmanagerservice.service" ]
 
 # The maximum number of Observations the agent can hold in its buffer
 observationBufferSize: 150000
