@@ -1,0 +1,886 @@
+<MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.5" xmlns="urn:mtconnect.org:MTConnectDevices:1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" device_F370="urn:mtconnect.org:MTConnectDevices:1.5 http://schemas.mtconnect.org/schemas/MTConnectDevices_1.5.xsd">
+  <Header creationTime="2023-06-08T19:41:21Z" sender="f370crD80186" instanceId="1680722797" version="1.4.0.12" assetBufferSize="1024" assetCount="0" bufferSize="131072" />
+  <Devices>
+    <Device name="J55-411045-persistency" id="J55-411045-persistency" iso841Class="6" sampleInterval="1000" uuid="J55-411045-persistency">
+      <Description manufacturer="Stratasys" model="PJ" />
+      <DataItems>
+        <DataItem name="Heartbeat" id="heartbeat" category="EVENT" type="PROCESS_TIME" subType="COMPLETE" />
+        <DataItem name="HASPSerialNumber" id="haspSerialNumber" category="EVENT" type="SERIAL_NUMBER" />
+        <DataItem name="PrinterSerialNumberInHasp" id="printerSerialNumberInHasp" category="EVENT" type="SERIAL_NUMBER" />
+        <DataItem name="PrinterComputerName" id="printerComputerName" category="EVENT" />
+        <DataItem name="PrinterSequences" id="printerSequences" category="EVENT" />
+        <DataItem name="SystemStatus" id="systemStatus" category="CONDITION" type="SYSTEM" />
+        <DataItem name="SystemPrintTime" id="systemPrintTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="SystemOnTime" id="systemOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="PatternTestWizardPrintTime" id="patternTestWizardPrintTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="PatternTestWizardOnTime" id="patternTestWizardOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="CleaningWizardPrintTime" id="cleaningWizardPrintTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="CleaningWizardOnTime" id="cleaningWizardOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="AirFilterPrintTime" id="airFilterPrintTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="AirFilterOnTime" id="airFilterOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="Downtime" id="downtime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="DELAY" />
+        <DataItem name="IdleTime" id="idleTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="DELAY" />
+        <DataItem name="PreventiveMaintenancePrintTime" id="preventiveMaintenancePrintTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="PreventiveMaintenanceOnTime" id="preventiveMaintenanceOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="PrinterRestart" id="printerRestart" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="HowWizardPrintTime" id="howWizardPrintTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="HowWizardOnTime" id="howWizardOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="LoadCellCalibrationWizardOnTime" id="loadCellCalibrationWizardOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="ExternalAirFilterPrintTime" id="externalAirFilterPrintTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="ExternalAirFilterOnTime" id="externalAirFilterOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="WiperWipes" id="wiperWipes" category="EVENT" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+        <DataItem name="WiperOnTime" id="wiperOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="SystemPrintTimeThreshold" id="systemPrintTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="SystemOnTimeThreshold" id="systemOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="PatternTestWizardPrintTimeThreshold" id="patternTestWizardPrintTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="PatternTestWizardOnTimeThreshold" id="patternTestWizardOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="CleaningWizardPrintTimeThreshold" id="cleaningWizardPrintTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="CleaningWizardOnTimeThreshold" id="cleaningWizardOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="AirFilterPrintTimeThreshold" id="airFilterPrintTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="AirFilterOnTimeThreshold" id="airFilterOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="DownTimeThreshold" id="downtimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="DELAY" />
+        <DataItem name="IdleTimeThreshold" id="idleTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="DELAY" />
+        <DataItem name="PreventiveMaintenancePrintTimeThreshold" id="preventiveMaintenancePrintTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="PreventiveMaintenanceOnTimeThreshold" id="preventiveMaintenanceOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="PrinterRestartThreshold" id="printerRestartThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="HowWizardPrintTimeThreshold" id="howWizardPrintTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="HowWizardOnTimeThreshold" id="howWizardOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="LoadCellCalibrationWizardOnTimeThreshold" id="loadCellCalibrationWizardOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="ExternalAirFilterPrintTimeThreshold" id="externalAirFilterPrintTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+        <DataItem name="ExternalAirFilterOnTimeThreshold" id="externalAirFilterOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="WiperWipesThreshold" id="wiperWipesThreshold" category="EVENT" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+        <DataItem name="WiperOnTimeThreshold" id="wiperOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+        <DataItem name="ThermistorCalibrationWizard" id="thermistorCalibrationWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="VacuumAndAirPressureCalibrationWizard" id="vacuumAndAirPressureCalibrationWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PatternTestWizard" id="patternTestWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PurgeWizard" id="purgeWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="WiperReplacementWizard" id="wiperReplacementWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="GeometricalCalibrationWizard" id="geometricalCalibrationWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="WiperCalibrationWizard" id="wiperCalibrationWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="HOWWizard" id="hOWWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="GeometricalValidationWizard" id="geometricalValidationWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PHreplacement" id="pHreplacement" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="HRWWizard" id="hRWWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="ShutdownWizard" id="shutdownWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PowerButtonShutdown" id="powerButtonShutdown" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="FieldCalibrationWizard" id="fieldCalibrationWizard" category="SAMPLE" type="PROCESS_STATE" />
+        <DataItem name="LoadCellCalibrationWizard" id="loadCellCalibrationWizard" category="SAMPLE" type="PROCESS_STATE" />
+        <DataItem name="EnvironmentSettingsWizard" id="environmentSettingsWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="MRWWizard" id="mRWWizard" category="SAMPLE" type="PROCESS_STATE" />
+        <DataItem name="PreventiveMaintenanceWizard" id="preventiveMaintenanceWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PreventiveMaintenanceMajorWizard" id="preventiveMaintenanceMajorWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PreventiveMaintenanceMinorWizard" id="preventiveMaintenanceMinorWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PMRollerWasteCollectorWizard" id="pMRollerWasteCollectorWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PMProAeroPreFilterWizard" id="pMProAeroPreFilterWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PMProAeroMainFilterWizard" id="pMProAeroMainFilterWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PreventiveMaintenanceProAeroWizard" id="preventiveMaintenanceProAeroWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="InitialPrinterSetupWizard" id="initialPrinterSetupWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="WetHOWWizard" id="wetHOWWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="PackageWizard" id="packageWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="HaspUpdateVersionWizard" id="haspUpdateVersionWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="CleaningWizard" id="cleaningWizard" category="EVENT" type="PROCESS_STATE" />
+        <DataItem name="RemainingDiskSpace" id="remainingDiskSpace" category="SAMPLE" type="DiskSpace" subType="ACTUAL" units="MB">
+          <Filters>
+            <Filter type="MINIMUM_DELTA">1</Filter>
+          </Filters>
+        </DataItem>
+        <DataItem name="EnvironmentLowTemperatureWarningThreshold" id="environmentLowTemperatureWarningThreshold" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+          <Filters>
+            <Filter type="MINIMUM_DELTA">0.5</Filter>
+          </Filters>
+        </DataItem>
+        <DataItem name="EnvironmentHighTemperatureWarningThreshold" id="environmentHighTemperatureWarningThreshold" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+          <Filters>
+            <Filter type="MINIMUM_DELTA">0.5</Filter>
+          </Filters>
+        </DataItem>
+        <DataItem name="EnvironmentUpperTemperature" id="environmentUpperTemperature" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+          <Filters>
+            <Filter type="MINIMUM_DELTA">0.5</Filter>
+          </Filters>
+        </DataItem>
+        <DataItem name="EnvironmentBuildTemperature" id="environmentBuildTemperature" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+          <Filters>
+            <Filter type="MINIMUM_DELTA">0.5</Filter>
+          </Filters>
+        </DataItem>
+        <DataItem name="PrinterLicense" id="printerLicense" category="SAMPLE" type="MESSAGE" />
+        <DataItem name="UpgradeInfo" id="lastUpgradeDate" category="EVENT" type="PROCESS_TIME" subType="COMPLETE" />
+        <DataItem name="PrinterConnectivityConfiguration" id="printerConnectivityConfiguration" category="EVENT" />
+        <DataItem name="CalibrationsBackupGeneral" id="calibrationsBackupGeneral" category="SAMPLE" />
+        <DataItem name="CalibrationsBackupParameters" id="calibrationsBackupParameters" category="SAMPLE" />
+        <DataItem name="CalibrationsBackupCounters" id="calibrationsBackupCounters" category="SAMPLE" />
+        <DataItem name="CalibrationsBackupPrintingHeads" id="calibrationsBackupPrintingHeads" category="SAMPLE" />
+        <DataItem name="CalibrationsBackupPositionCompensationsRAxis" id="calibrationsBackupPositionCompensationsRAxis" category="SAMPLE" />
+        <DataItem name="CalibrationsBackupPositionCompensationsZAxis" id="calibrationsBackupPositionCompensationsZAxis" category="SAMPLE" />
+      </DataItems>
+      <Components>
+        <Wizards>
+          <Components>
+            <PatternTestWizard name="PatternTestWizard">
+              <DataItems>
+                <DataItem name="PatternTestType" id="patternTestType" category="EVENT" type="PatternTestType" />
+              </DataItems>
+            </PatternTestWizard>
+            <GeometricalCalibrationWizard name="GeometricalCalibrationWizard">
+              <DataItems>
+                <DataItem name="PrintHeadCalAngleNCh0" id="printHeadCalAngleNCh0" category="SAMPLE" type="ANGLE" subType="ACTUAL" units="DEGREE" />
+                <DataItem name="PrintHeadCalAngleNCh1" id="printHeadCalAngleNCh1" category="SAMPLE" type="ANGLE" subType="ACTUAL" units="DEGREE" />
+                <DataItem name="PrintHeadCalAngleNCh2" id="printHeadCalAngleNCh2" category="SAMPLE" type="ANGLE" subType="ACTUAL" units="DEGREE" />
+                <DataItem name="PrintHeadCalAngleNCh3" id="printHeadCalAngleNCh3" category="SAMPLE" type="ANGLE" subType="ACTUAL" units="DEGREE" />
+                <DataItem name="PrintHeadCalAngleNCh4" id="printHeadCalAngleNCh4" category="SAMPLE" type="ANGLE" subType="ACTUAL" units="DEGREE" />
+                <DataItem name="PrintHeadCalAngleNCh5" id="printHeadCalAngleNCh5" category="SAMPLE" type="ANGLE" subType="ACTUAL" units="DEGREE" />
+                <DataItem name="PrintHeadCalXCh0" id="printHeadCalXCh0" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalXCh1" id="printHeadCalXCh1" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalXCh2" id="printHeadCalXCh2" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalXCh3" id="printHeadCalXCh3" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalXCh4" id="printHeadCalXCh4" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalXCh5" id="printHeadCalXCh5" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalYCh0" id="printHeadCalYCh0" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalYCh1" id="printHeadCalYCh1" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalYCh2" id="printHeadCalYCh2" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalYCh3" id="printHeadCalYCh3" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalYCh4" id="printHeadCalYCh4" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="PrintHeadCalYCh5" id="printHeadCalYCh5" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="RAxisCalOffsetX" id="rAxisCalOffsetX" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+                <DataItem name="RAxisCalOffsetY" id="rAxisCalOffsetY" category="SAMPLE" type="LENGTH" subType="STANDARD" units="MILLIMETER" />
+              </DataItems>
+            </GeometricalCalibrationWizard>
+            <WiperCalibrationWizard name="WiperCalibrationWizard">
+              <DataItems>
+                <DataItem name="WiperContactAngle" id="wiperContactAngle" category="SAMPLE" type="ANGLE" subType="ACTUAL" units="DEGREE" />
+              </DataItems>
+            </WiperCalibrationWizard>
+            <ShutdownWizard name="ShutdownWizard">
+              <DataItems>
+                <DataItem name="ShutDownType" id="shutDownType" category="EVENT" type="ShutDownType" />
+              </DataItems>
+            </ShutdownWizard>
+          </Components>
+        </Wizards>
+        <Axes name="Axes" id="axes">
+          <Components>
+            <ServiceStation name="ServiceStation" id="serviceStation">
+              <DataItems>
+                <DataItem name="ServiceStationWastePumpWorkTime" id="serviceStationWastePumpWorkTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="ServiceStationWastePumpWorkTimeThreshold" id="serviceStationWastePumpWorkTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+              </DataItems>
+            </ServiceStation>
+            <UVLamp name="UvLamp" id="uvLamp">
+              <DataItems>
+                <DataItem name="UvLampWorkTime" id="uvLampWorkTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="UvLampOnTime" id="uvLampOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="UvLampDose" id="uvLampDose" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="UvLampWorkTimeThreshold" id="uvLampWorkTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="UvLampOnTimeThreshold" id="uvLampOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="UvLampDoseThreshold" id="uvLampDoseThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+              </DataItems>
+            </UVLamp>
+            <Roller name="Roller" id="roller">
+              <DataItems>
+                <DataItem name="RollerWasteOnTime" id="rollerWasteOnTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="RollerWastePrintTime" id="rollerWastePrintTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="RollerWastePumpWorkTime" id="rollerWastePumpWorkTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="RollerWasteOnTimeThreshold" id="rollerWasteOnTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="RollerWastePrintTimeThreshold" id="rollerWastePrintTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="RollerWastePumpWorkTimeThreshold" id="rollerWastePumpWorkTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+              </DataItems>
+            </Roller>
+          </Components>
+        </Axes>
+        <Systems name="Systems" id="systems">
+          <Components>
+            <Feeder name="Channel0" id="channel0">
+              <DataItems>
+                <DataItem name="WeightPrintedChannel0" id="weightPrintedChannel0" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel0" id="materialFilterWeightUpperBayChannel0" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel0" id="materialFilterWeightLowerBayChannel0" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel0" id="materialFilterOnTimeUpperBayChannel0" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel0" id="materialFilterOnTimeLowerBayChannel0" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel0" id="materialPhWeightChannel0" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="WeightPrintedChannel0Threshold" id="weightPrintedChannel0Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel0Threshold" id="materialFilterWeightUpperBayChannel0Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel0Threshold" id="materialFilterWeightLowerBayChannel0Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel0Threshold" id="materialFilterOnTimeUpperBayChannel0Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel0Threshold" id="materialFilterOnTimeLowerBayChannel0Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel0Threshold" id="materialPhWeightChannel0Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MissingNozzlesChannel0" id="missingNozzlesChannel0" category="EVENT" type="EQUIPMENT_TIMER" subType="COMPLETE" />
+                <DataItem name="LsFullThresholdCountsCh0" id="lsFullThresholdCountsCh0" category="SAMPLE" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+              </DataItems>
+            </Feeder>
+            <Feeder name="Channel1" id="channel1">
+              <DataItems>
+                <DataItem name="WeightPrintedChannel1" id="weightPrintedChannel1" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel1" id="materialFilterWeightUpperBayChannel1" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel1" id="materialFilterWeightLowerBayChannel1" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel1" id="materialFilterOnTimeUpperBayChannel1" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel1" id="materialFilterOnTimeLowerBayChannel1" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel1" id="materialPhWeightChannel1" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="WeightPrintedChannel1Threshold" id="weightPrintedChannel1Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel1Threshold" id="materialFilterWeightUpperBayChannel1Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel1Threshold" id="materialFilterWeightLowerBayChannel1Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel1Threshold" id="materialFilterOnTimeUpperBayChannel1Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel1Threshold" id="materialFilterOnTimeLowerBayChannel1Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel1Threshold" id="materialPhWeightChannel1Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MissingNozzlesChannel1" id="missingNozzlesChannel1" category="EVENT" type="EQUIPMENT_TIMER" subType="COMPLETE" />
+                <DataItem name="LsFullThresholdCountsCh1" id="lsFullThresholdCountsCh1" category="SAMPLE" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+              </DataItems>
+            </Feeder>
+            <Feeder name="Channel2" id="channel2">
+              <DataItems>
+                <DataItem name="WeightPrintedChannel2" id="weightPrintedChannel2" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel2" id="materialFilterWeightUpperBayChannel2" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel2" id="materialFilterWeightLowerBayChannel2" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel2" id="materialFilterOnTimeUpperBayChannel2" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel2" id="materialFilterOnTimeLowerBayChannel2" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel2" id="materialPhWeightChannel2" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="WeightPrintedChannel2Threshold" id="weightPrintedChannel2Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel2Threshold" id="materialFilterWeightUpperBayChannel2Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel2Threshold" id="materialFilterWeightLowerBayChannel2Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel2Threshold" id="materialFilterOnTimeUpperBayChannel2Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel2Threshold" id="materialFilterOnTimeLowerBayChannel2Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel2Threshold" id="materialPhWeightChannel2Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MissingNozzlesChannel2" id="missingNozzlesChannel2" category="EVENT" type="EQUIPMENT_TIMER" subType="COMPLETE" />
+                <DataItem name="LsFullThresholdCountsCh2" id="lsFullThresholdCountsCh2" category="SAMPLE" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+              </DataItems>
+            </Feeder>
+            <Feeder name="Channel3" id="channel3">
+              <DataItems>
+                <DataItem name="WeightPrintedChannel3" id="weightPrintedChannel3" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel3" id="materialFilterWeightUpperBayChannel3" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel3" id="materialFilterWeightLowerBayChannel3" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel3" id="materialFilterOnTimeUpperBayChannel3" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel3" id="materialFilterOnTimeLowerBayChannel3" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel3" id="materialPhWeightChannel3" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="WeightPrintedChannel3Threshold" id="weightPrintedChannel3Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel3Threshold" id="materialFilterWeightUpperBayChannel3Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel3Threshold" id="materialFilterWeightLowerBayChannel3Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel3Threshold" id="materialFilterOnTimeUpperBayChannel3Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel3Threshold" id="materialFilterOnTimeLowerBayChannel3Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel3Threshold" id="materialPhWeightChannel3Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MissingNozzlesChannel3" id="missingNozzlesChannel3" category="EVENT" type="EQUIPMENT_TIMER" subType="COMPLETE" />
+                <DataItem name="LsFullThresholdCountsCh3" id="lsFullThresholdCountsCh3" category="SAMPLE" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+              </DataItems>
+            </Feeder>
+            <Feeder name="Channel4" id="channel4">
+              <DataItems>
+                <DataItem name="WeightPrintedChannel4" id="weightPrintedChannel4" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel4" id="materialFilterWeightUpperBayChannel4" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel4" id="materialFilterWeightLowerBayChannel4" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel4" id="materialFilterOnTimeUpperBayChannel4" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel4" id="materialFilterOnTimeLowerBayChannel4" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel4" id="materialPhWeightChannel4" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="WeightPrintedChannel4Threshold" id="weightPrintedChannel4Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel4Threshold" id="materialFilterWeightUpperBayChannel4Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel4Threshold" id="materialFilterWeightLowerBayChannel4Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel4Threshold" id="materialFilterOnTimeUpperBayChannel4Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel4Threshold" id="materialFilterOnTimeLowerBayChannel4Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel4Threshold" id="materialPhWeightChannel4Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MissingNozzlesChannel4" id="missingNozzlesChannel4" category="EVENT" type="EQUIPMENT_TIMER" subType="COMPLETE" />
+                <DataItem name="LsFullThresholdCountsCh4" id="lsFullThresholdCountsCh4" category="SAMPLE" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+              </DataItems>
+            </Feeder>
+            <Feeder name="Channel5" id="channel5">
+              <DataItems>
+                <DataItem name="WeightPrintedChannel5" id="weightPrintedChannel5" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel5" id="materialFilterWeightUpperBayChannel5" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel5" id="materialFilterWeightLowerBayChannel5" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel5" id="materialFilterOnTimeUpperBayChannel5" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel5" id="materialFilterOnTimeLowerBayChannel5" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel5" id="materialPhWeightChannel5" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="WeightPrintedChannel5Threshold" id="weightPrintedChannel5Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightUpperBayChannel5Threshold" id="materialFilterWeightUpperBayChannel5Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterWeightLowerBayChannel5Threshold" id="materialFilterWeightLowerBayChannel5Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialFilterOnTimeUpperBayChannel5Threshold" id="materialFilterOnTimeUpperBayChannel5Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialFilterOnTimeLowerBayChannel5Threshold" id="materialFilterOnTimeLowerBayChannel5Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="MaterialPhWeightChannel5Threshold" id="materialPhWeightChannel5Threshold" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MissingNozzlesChannel5" id="missingNozzlesChannel5" category="EVENT" type="EQUIPMENT_TIMER" subType="COMPLETE" />
+                <DataItem name="LsFullThresholdCountsCh5" id="lsFullThresholdCountsCh5" category="SAMPLE" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+              </DataItems>
+            </Feeder>
+            <Electric name="MainBoard" id="mainBoard">
+              <DataItems>
+                <DataItem name="FirmwareVersion" id="mainBoardFirmwareVersion" category="EVENT" type="FIRMWARE" subType="VERSION" />
+                <DataItem name="FirmwareRevision" id="mainBoardFirmwareRevision" category="EVENT" type="FIRMWARE" subType="VERSION" />
+              </DataItems>
+            </Electric>
+            <Electric name="HeadBoard" id="headBoard">
+              <DataItems>
+                <DataItem name="FirmwareVersion" id="headBoardFirmwareVersion" category="EVENT" type="FIRMWARE" subType="VERSION" />
+                <DataItem name="FirmwareRevision" id="headBoardFirmwareRevision" category="EVENT" type="FIRMWARE" subType="VERSION" />
+              </DataItems>
+            </Electric>
+            <Electric name="SecondaryBoard" id="secondaryBoard">
+              <DataItems>
+                <DataItem name="FirmwareVersion" id="secondaryBoardFirmwareVersion" category="EVENT" type="FIRMWARE" subType="VERSION" />
+              </DataItems>
+            </Electric>
+            <Electric name="ExpansionBoard" id="expansionBoard">
+              <DataItems>
+                <DataItem name="FirmwareVersion" id="expansionBoardFirmwareVersion" category="EVENT" type="FIRMWARE" subType="VERSION" />
+              </DataItems>
+            </Electric>
+            <Deposition name="PrintingHeadThresholds" id="printingHeadThresholds">
+              <DataItems>
+                <DataItem name="PrintheadHighTemperatureWarningThreshold" id="printheadHighTemperatureWarningThreshold" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL" />
+                <DataItem name="PrintheadLowTemperatureWarningThreshold" id="printheadLowTemperatureWarningThreshold" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL" />
+              </DataItems>
+            </Deposition>
+            <Deposition name="PrintingHead0" id="printingHead0">
+              <DataItems>
+                <DataItem name="PrintingHead0Channel0Voltage" id="printingHead0Channel0Voltage" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel1Voltage" id="printingHead0Channel1Voltage" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0SerialNumber" id="printingHead0SerialNumber" category="EVENT" type="SERIAL_NUMBER" />
+                <DataItem name="PrintingHeadPrintTime0" id="printingHeadPrintTime0" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="PrintingHeadOnTime0" id="printingHeadOnTime0" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="PrintingHeadPrintTime0Threshold" id="printingHeadPrintTime0Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="PrintingHeadOnTime0Threshold" id="printingHeadOnTime0Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="PrintingHead0Channel0Temp" id="printingHead0Channel0Temp" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel1Temp" id="printingHead0Channel1Temp" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel0TempComanded" id="printingHead0Channel0TempComanded" category="SAMPLE" type="TEMPERATURE" subType="COMANDED">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel1TempComanded" id="printingHead0Channel1TempComanded" category="SAMPLE" type="TEMPERATURE" subType="COMANDED">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel0PWM" id="printingHead0Channel0PWM" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel1PWM" id="printingHead0Channel1PWM" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel0LiquidLevel" id="printingHead0Channel0LiquidLevel" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">11</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel1LiquidLevel" id="printingHead0Channel1LiquidLevel" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">11</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel0LiquidLevelThreshold" id="printingHead0Channel0LiquidLevelThreshold" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead0Channel1LiquidLevelThreshold" id="printingHead0Channel1LiquidLevelThreshold" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+            </Deposition>
+            <Deposition name="PrintingHead1" id="printingHead1">
+              <DataItems>
+                <DataItem name="PrintingHead1Channel2Voltage" id="printingHead1Channel2Voltage" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel3Voltage" id="printingHead1Channel3Voltage" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1SerialNumber" id="printingHead1SerialNumber" category="EVENT" type="SERIAL_NUMBER" />
+                <DataItem name="PrintingHeadPrintTime1" id="printingHeadPrintTime1" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="PrintingHeadOnTime1" id="printingHeadOnTime1" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="PrintingHeadPrintTime1Threshold" id="printingHeadPrintTime1Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="PrintingHeadOnTime1Threshold" id="printingHeadOnTime1Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="PrintingHead1Channel2Temp" id="printingHead1Channel2Temp" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel3Temp" id="printingHead1Channel3Temp" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel2TempComanded" id="printingHead1Channel2TempComanded" category="SAMPLE" type="TEMPERATURE" subType="COMANDED">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel3TempComanded" id="printingHead1Channel3TempComanded" category="SAMPLE" type="TEMPERATURE" subType="COMANDED">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel2PWM" id="printingHead1Channel2PWM" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel3PWM" id="printingHead1Channel3PWM" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel2LiquidLevel" id="printingHead1Channel2LiquidLevel" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">11</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel3LiquidLevel" id="printingHead1Channel3LiquidLevel" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">11</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel2LiquidLevelThreshold" id="printingHead1Channel2LiquidLevelThreshold" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead1Channel3LiquidLevelThreshold" id="printingHead1Channel3LiquidLevelThreshold" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+            </Deposition>
+            <Deposition name="PrintingHead2" id="printingHead2">
+              <DataItems>
+                <DataItem name="PrintingHead2Channel4Voltage" id="printingHead2Channel4Voltage" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel5Voltage" id="printingHead2Channel5Voltage" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2SerialNumber" id="printingHead2SerialNumber" category="EVENT" type="SERIAL_NUMBER" />
+                <DataItem name="PrintingHeadPrintTime2" id="printingHeadPrintTime2" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.5</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHeadOnTime2" id="printingHeadOnTime2" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.5</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHeadPrintTime2Threshold" id="printingHeadPrintTime2Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="PrintingHeadOnTime2Threshold" id="printingHeadOnTime2Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" />
+                <DataItem name="PrintingHead2Channel4Temp" id="printingHead2Channel4Temp" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel5Temp" id="printingHead2Channel5Temp" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel4TempComanded" id="printingHead2Channel4TempComanded" category="SAMPLE" type="TEMPERATURE" subType="COMANDED">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel5TempComanded" id="printingHead2Channel5TempComanded" category="SAMPLE" type="TEMPERATURE" subType="COMANDED">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel4PWM" id="printingHead2Channel4PWM" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel5PWM" id="printingHead2Channel5PWM" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel4LiquidLevel" id="printingHead2Channel4LiquidLevel" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">11</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel5LiquidLevel" id="printingHead2Channel5LiquidLevel" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">11</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel4LiquidLevelThreshold" id="printingHead2Channel4LiquidLevelThreshold" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PrintingHead2Channel5LiquidLevelThreshold" id="printingHead2Channel5LiquidLevelThreshold" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">1</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+            </Deposition>
+            <Deposition name="Termistors" id="termistors">
+              <DataItems>
+                <DataItem name="TermistorsPrintTime" id="termistorsPrintTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="TermistorsPrintTimeThreshold" id="termistorsPrintTimeThreshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+              </DataItems>
+            </Deposition>
+            <Deposition name="BlockHeater" id="blockHeater">
+              <DataItems>
+                <DataItem name="BlockheaterLowTemperatureWarningThreshold" id="blockheaterLowTemperatureWarningThreshold" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL" />
+                <DataItem name="BlockheaterHighTemperatureWarningThreshold" id="blockheaterHighTemperatureWarningThreshold" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL" />
+                <DataItem name="BlockHeater0CurrentTemperature" id="blockHeater0CurrentTemperature" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="BlockHeater1CurrentTemperature" id="blockHeater1CurrentTemperature" category="SAMPLE" type="TEMPERATURE" subType="ACTUAL">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+            </Deposition>
+            <Controller name="Controller" id="controller">
+              <DataItems>
+                <DataItem name="ControllerSoftwareVersion" id="swVersion" category="EVENT" type="APPLICATION" subType="VERSION" />
+                <DataItem name="SWJobManagerVersion" id="swJobManagerVersion" category="EVENT" type="APPLICATION" subType="VERSION" />
+                <DataItem name="OSVersion" id="osVersion" category="EVENT" type="APPLICATION" subType="VERSION" />
+                <DataItem name="OSProductName" id="osProductName" category="EVENT" type="APPLICATION" subType="VERSION" />
+                <DataItem name="BofaIsInstalled" id="bofaIsInstalled" category="EVENT" type="BOOLEAN" />
+                <DataItem name="CycloneVersionInHasp" id="cycloneVersionInHasp" category="EVENT" type="APPLICATION" subType="VERSION" />
+              </DataItems>
+              <Components name="Path" id="path">
+                <Path>
+                  <DataItems>
+                    <DataItem name="PathExecution" id="pathExecution" category="EVENT" type="EXECUTION" />
+                    <DataItem name="PjAppState" id="pjAppState" category="EVENT" type="APP_STATE" />
+                    <DataItem name="PjPrinterStatus" id="pjPrinterStatus" category="EVENT" type="PRINTER_STATUS" />
+                    <DataItem name="PjPrintMode" id="pjPrintMode" category="EVENT" type="PRINT_MODE" />
+                    <DataItem name="PathProgramID" id="pathProgramId" category="EVENT" type="PROGRAM" />
+                    <DataItem name="Layers" id="layers" category="EVENT" type="MATERIAL_LAYER" subType="TARGET" />
+                    <DataItem name="CurrentLayer" id="curLayer" category="EVENT" type="MATERIAL_LAYER" subType="ACTUAL" />
+                    <DataItem name="EstimatedTime" id="estTime" category="SAMPLE" type="EQUIPMENT_TIMER" subType="OPERATING" units="SECOND" nativeUnits="SECOND" />
+                    <DataItem name="PrintModeThickness" id="printModeThickness" category="SAMPLE" type="POSITION" subType="PROGRAMMED" units="MILLIMETER" nativeUnits="MILLIMETER" />
+                    <DataItem name="FunctionalMode" id="functionalMode" category="EVENT" type="FUNCTIONAL_MODE" />
+                    <DataItem name="PathProgramStatus" id="pathProgramStatus" category="EVENT" type="PROCESS_STATE" />
+                  </DataItems>
+                </Path>
+                <Materials name="JobMaterial" id="jobMaterial0">
+                  <DataItems>
+                    <DataItem name="MaterialLicenseName" id="jobMaterial0MaterialLicenseName" category="EVENT" type="MATERIAL" />
+                    <DataItem name="EstimatedWeight" id="jobMaterial0EstimatedtWeight" category="SAMPLE" type="MASS" nativeUnits="KILOGRAM" />
+                  </DataItems>
+                </Materials>
+                <Materials name="JobMaterial" id="jobMaterial1">
+                  <DataItems>
+                    <DataItem name="MaterialLicenseName" id="jobMaterial1MaterialLicenseName" category="EVENT" type="MATERIAL" />
+                    <DataItem name="EstimatedWeight" id="jobMaterial1EstimatedtWeight" category="SAMPLE" type="MASS" nativeUnits="KILOGRAM" />
+                  </DataItems>
+                </Materials>
+                <Materials name="JobMaterial" id="jobMaterial2">
+                  <DataItems>
+                    <DataItem name="MaterialLicenseName" id="jobMaterial2MaterialLicenseName" category="EVENT" type="MATERIAL" />
+                    <DataItem name="EstimatedWeight" id="jobMaterial2EstimatedtWeight" category="SAMPLE" type="MASS" nativeUnits="KILOGRAM" />
+                  </DataItems>
+                </Materials>
+                <Materials name="JobMaterial" id="jobMaterial3">
+                  <DataItems>
+                    <DataItem name="MaterialLicenseName" id="jobMaterial3MaterialLicenseName" category="EVENT" type="MATERIAL" />
+                    <DataItem name="EstimatedWeight" id="jobMaterial3EstimatedtWeight" category="SAMPLE" type="MASS" nativeUnits="KILOGRAM" />
+                  </DataItems>
+                </Materials>
+                <Materials name="JobMaterial" id="jobMaterial4">
+                  <DataItems>
+                    <DataItem name="MaterialLicenseName" id="jobMaterial4MaterialLicenseName" category="EVENT" type="MATERIAL" />
+                    <DataItem name="EstimatedWeight" id="jobMaterial4EstimatedtWeight" category="SAMPLE" type="MASS" nativeUnits="KILOGRAM" />
+                  </DataItems>
+                </Materials>
+                <Materials name="JobMaterial" id="jobMaterial5">
+                  <DataItems>
+                    <DataItem name="MaterialLicenseName" id="jobMaterial5MaterialLicenseName" category="EVENT" type="MATERIAL" />
+                    <DataItem name="EstimatedWeight" id="jobMaterial5EstimatedtWeight" category="SAMPLE" type="MASS" nativeUnits="KILOGRAM" />
+                  </DataItems>
+                </Materials>
+              </Components>
+            </Controller>
+            <Vacuum name="PlatenVacuum" id="platenVacuum">
+              <DataItems>
+                <DataItem name="systemVacuum" id="systemVacuum" category="SAMPLE" type="PRESSURE" subType="ACTUAL" units="CM H20">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.05</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="PressureSensorOffsetCount" id="pressureSensorOffsetCount" category="SAMPLE" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+                <DataItem name="VacuumSensorOffsetCount" id="vacuumSensorOffsetCount" category="SAMPLE" type="EQUIPMENT_TIMER" subType="COMPLETE" units="COUNT" />
+                <DataItem name="BlockFloodSensorBypass" id="blockFloodSensorBypass" category="EVENT" />
+                <DataItem name="BlockFloodSensorDutyCycle" id="blockFloodSensorDutyCycle" category="EVENT" />
+                <DataItem name="SystemPressure" id="systemPressure" category="SAMPLE" type="PRESSURE" subType="ACTUAL" units="PSI">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.2</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem name="SystemBlockFloodSensor" id="systemBlockFloodSensor" category="SAMPLE" type="VOLTAGE_DC" subType="ACTUAL" units="A2D">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">50</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+            </Vacuum>
+            <WasteCollection name="WasteCollection" id="wasteCollection">
+              <DataItems>
+                <DataItem name="WetWasteLoadCellDisconnected" id="wetWasteLoadCellDisconnected" category="SAMPLE" />
+                <DataItem name="WetWasteInPlace" id="wetWasteInPlace" category="SAMPLE" />
+                <DataItem name="WetWasteLoadCellA2D" id="wetWasteLoadCellA2D" category="SAMPLE" />
+                <DataItem name="WetWasteWeightGrams" id="wetWasteWeightGrams" category="SAMPLE" />
+                <DataItem name="WetWasteWeightPercentage" id="wetWasteWeightPercentage" category="SAMPLE" />
+              </DataItems>
+            </WasteCollection>
+          </Components>
+        </Systems>
+        <Resources name="Resources" id="resources">
+          <Components>
+            <Materials name="Material0" id="material0">
+              <DataItems>
+                <DataItem name="MaterialId" id="material0MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material0MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material0MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material0ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material0ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material0BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material0InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material0SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material0CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material0LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material0IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge0" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTimeThreshold" id="materialPumpWorkTimeCartridge0Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material0IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material1" id="material1">
+              <DataItems>
+                <DataItem name="MaterialId" id="material1MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material1MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material1MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material1ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material1ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material1BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material1InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material1SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material1CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material1LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material1IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge1" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTimeThreshold" id="materialPumpWorkTimeCartridge1Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material1IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material2" id="material2">
+              <DataItems>
+                <DataItem name="MaterialId" id="material2MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material2MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material2MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material2ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material2ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material2BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material2InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material2SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material2CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material2LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material2IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge2" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTimeThreshold" id="materialPumpWorkTimeCartridge2Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material2IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material3" id="material3">
+              <DataItems>
+                <DataItem name="MaterialId" id="material3MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material3MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material3MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material3ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material3ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material3BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material3InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material3SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material3CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material3LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material3IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge3" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTimeThreshold" id="materialPumpWorkTimeCartridge3Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material3IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material4" id="material4">
+              <DataItems>
+                <DataItem name="MaterialId" id="material4MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material4MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material4MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material4ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material4ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material4BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material4InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material4SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material4CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material4LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material4IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge4" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTimeThreshold" id="materialPumpWorkTimeCartridge4Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material4IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material5" id="material5">
+              <DataItems>
+                <DataItem name="MaterialId" id="material5MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material5MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material5MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material5ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material5ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material5BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material5InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material5SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material5CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material5LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material5IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge5" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTimeThreshold" id="materialPumpWorkTimeCartridge5Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material5IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material6" id="material6">
+              <DataItems>
+                <DataItem name="MaterialId" id="material6MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material6MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material6MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material6ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material6ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material6BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material6InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material6SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material6CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material6LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material6IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge6" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTimeThreshold" id="materialPumpWorkTimeCartridge6Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material6IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material7" id="material7">
+              <DataItems>
+                <DataItem name="MaterialId" id="material7MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material7MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material7MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material7ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material7ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material7BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material7InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material7SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material7CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material7LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material7IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge7" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTimeThreshold" id="materialPumpWorkTimeCartridge7Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material7IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material8" id="material8">
+              <DataItems>
+                <DataItem name="MaterialId" id="material8MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material8MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material8MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material8ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material8ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material8BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material8InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material8SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material8CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material8LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material8IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge8" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTimeThreshold" id="materialPumpWorkTimeCartridge8Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material8IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material9" id="material9">
+              <DataItems>
+                <DataItem name="MaterialId" id="material9MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material9MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material9MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material9ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material9ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material9BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material9InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material9SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material9CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material9LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material9IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge9" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge9Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material9IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material10" id="material10">
+              <DataItems>
+                <DataItem name="MaterialId" id="material10MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material10MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material10MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material10ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material10ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material10BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material10InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material10SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material10CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material10LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material10IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge10" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge10Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material10IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+            <Materials name="Material11" id="material11">
+              <DataItems>
+                <DataItem name="MaterialId" id="material11MaterialId" category="EVENT" type="PART_ID" subType="NA" units="NA" />
+                <DataItem name="MaterialName" id="material11MaterialName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialLicenseName" id="material11MaterialLicenseName" category="EVENT" type="MATERIAL" subType="NA" units="NA" />
+                <DataItem name="MaterialContainerStatus" id="material11ContainerStatus" category="EVENT" type="CONTAINER_STATUS" subType="NA" units="NA" />
+                <DataItem name="MaterialExpirationDate" id="material11ExpirationDate" category="EVENT" type="DATE_CODE" subType="EXPIRATION" units="NA" />
+                <DataItem name="MaterialBatchNumber" id="material11BatchNumber" category="EVENT" type="PART_GROUP_ID" subType="BATCH" units="NA" />
+                <DataItem name="MaterialInitialWeight" id="material11InitialWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="SerialNumber" id="material11SerialNumber" category="EVENT" type="SERIAL_NUMBER" subType="NA" units="NA" />
+                <DataItem name="CurrentWeight" id="material11CurrentWeight" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="MaterialLoadCellA2D" id="material11LoadCellA2D" category="SAMPLE" type="MASS" units="KILOGRAM" />
+                <DataItem name="IsMaterialActive" id="material11IsActive" category="EVENT" type="BOOLEAN" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge11" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialPumpWorkTime" id="materialPumpWorkTimeCartridge11Threshold" category="SAMPLE" type="EQUIPMENT_TIMER" subType="WORKING" />
+                <DataItem name="MaterialIsSupport" id="material11IsSupport" category="SAMPLE" type="BOOLEAN" />
+              </DataItems>
+            </Materials>
+          </Components>
+        </Resources>
+      </Components>
+    </Device>
+  </Devices>
+</MTConnectDevices>

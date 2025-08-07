@@ -44,7 +44,7 @@ modules:
 #     topic: cnc-01
 
 - greengrass-gateway-monitor: # - Add Greengrass Gateway Monitor module
-    gatewayAddress: localhost
+    gatewayAddress: 192.168.1.6
     readInterval: 10000
     port: 8883
     timeout: 2000
