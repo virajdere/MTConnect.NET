@@ -37,7 +37,6 @@ namespace MTConnect
         private CancellationTokenSource _stop;
         private static readonly object _lastSentSequenceLock = new object();
         private long _totalIncomingObservations = 0;
-        private long _totalUnsentObservations = 0;
         private long _lastSentSequence = 0;
 
 
@@ -274,14 +273,20 @@ namespace MTConnect
             if (Agent is IMTConnectAgentBroker broker)
             {
                 ulong lastSent = GetLastSentSequence();
-                ulong from = lastSent + 1;
+                ulong from = Math.Max(lastSent + 1, broker.FirstSequence);
                 ulong to = broker.LastSequence;
+
+                Log(MTConnectLogLevel.Information, $"[MQTT Relay] RelayBufferedObservations: lastSent={lastSent}, broker.FirstSequence={broker.FirstSequence}, broker.LastSequence={broker.LastSequence}");
 
                 long missed = (long)(to - lastSent);
 
-                if (missed > 0)
+                if (lastSent + 1 < broker.FirstSequence)
                 {
-                    Log(MTConnectLogLevel.Warning, $"[MQTT Relay] Network reconnected. {missed} observations were missed and will now be sent.");
+                    Log(MTConnectLogLevel.Warning, $"[MQTT Relay] Some observations could not be relayed because they were overwritten in the buffer (lastSent={lastSent}, firstAvailable={broker.FirstSequence}).");
+                }
+                if (missed > 0 && from <= to)
+                {
+                    Log(MTConnectLogLevel.Warning, $"[MQTT Relay] Network reconnected. {to - from + 1} observations will now be sent (from Sequence {from} to {to}).");
                 }
 
                 if (from <= to)
@@ -318,8 +323,9 @@ namespace MTConnect
                     }
 
                     Log(MTConnectLogLevel.Information, $"[MQTT Relay] Buffered observation relay complete. {observations.Count} missed observations sent.");
-                    _totalUnsentObservations = _totalIncomingObservations - _lastSentSequence;
-                    Log(MTConnectLogLevel.Information, $"[MQTT Relay] Unsent observations after relay: {_totalUnsentObservations}");
+                    var unsent = broker.LastSequence > (ulong)_lastSentSequence ? broker.LastSequence - (ulong)_lastSentSequence : 0;
+                    if (unsent > 0)
+                        Log(MTConnectLogLevel.Information, $"[MQTT Relay] {unsent} new observations arrived during relay and will be sent next.");
                 }
                 else
                 {
@@ -596,7 +602,6 @@ namespace MTConnect
 
                     if (dataItemObservation.Category == DataItemCategory.CONDITION)
                     {
-                        // Conditions have multiple observations
                         var multipleObservations = new List<IObservation>();
                         foreach (var observation in dataItemObservations)
                         {
@@ -618,18 +623,7 @@ namespace MTConnect
                             multipleObservations.Add(x);
                         }
 
-                        if (_configuration.DurableRelay)
-                        {
-                            var result = await _entityServer.PublishObservations(_mqttClient, multipleObservations);
-                            if (result != null && result.IsSuccess && multipleObservations.Count > 0)
-                            {
-                                SetLastSentSequence(multipleObservations.Max(o => o.Sequence));
-                            }
-                        }
-                        else
-                        {
-                            await _entityServer.PublishObservations(_mqttClient, multipleObservations);
-                        }
+                        await _entityServer.PublishObservations(_mqttClient, multipleObservations);
                     }
                     else
                     {
@@ -650,18 +644,7 @@ namespace MTConnect
                         x.Timestamp = observation.Timestamp;
                         x.AddValues(observation.Values);
 
-                        if (_configuration.DurableRelay)
-                        {
-                            var result = await _entityServer.PublishObservation(_mqttClient, x);
-                            if (result != null && result.IsSuccess)
-                            {
-                                SetLastSentSequence(x.Sequence);
-                            }
-                        }
-                        else
-                        {
-                            await _entityServer.PublishObservation(_mqttClient, x);
-                        }
+                        await _entityServer.PublishObservation(_mqttClient, x);
                     }
                 }
             }
@@ -696,7 +679,6 @@ namespace MTConnect
 
                 var lastSent = GetLastSentSequence();
                 _lastSentSequence = (long)lastSent;
-                _totalUnsentObservations = _totalIncomingObservations - _lastSentSequence;
 
                 if (_entityServer != null)
                 {
